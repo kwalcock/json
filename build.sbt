@@ -1,9 +1,9 @@
 import Dependencies._
 
-ThisBuild / scalaVersion     := "2.13.7"
+ThisBuild / scalaVersion     := "2.12.15"
 ThisBuild / version          := "0.1.0-SNAPSHOT"
-ThisBuild / organization     := "com.example"
-ThisBuild / organizationName := "example"
+ThisBuild / organization     := "com.keithalcock"
+ThisBuild / organizationName := "Keith Alcock"
 
 lazy val root = (project in file("."))
   .settings(
@@ -11,4 +11,20 @@ lazy val root = (project in file("."))
     libraryDependencies += scalaTest % Test
   )
 
-// See https://www.scala-sbt.org/1.x/docs/Using-Sonatype.html for instructions on how to publish to Sonatype.
+lazy val argonaut = project
+
+lazy val circe = project
+
+lazy val jerkson = project
+
+lazy val json4s = project
+
+lazy val lift = project
+
+lazy val play = project
+
+lazy val spray = project
+
+lazy val upickle = project
+
+lazy val zio = project
