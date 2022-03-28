@@ -1,9 +1,9 @@
 package example
 
-import org.scalatest.flatspec.AnyFlatSpec
-import org.scalatest.matchers.should.Matchers
+import com.keithalcock.json.common.Test
 
-class HelloSpec extends AnyFlatSpec with Matchers {
+class HelloSpec extends Test {
+
   "The Hello object" should "say hello" in {
     Hello.greeting shouldEqual "hello"
   }
