@@ -7,6 +7,7 @@ ThisBuild / organization     := "com.keithalcock"
 ThisBuild / organizationName := "Keith Alcock"
 
 lazy val root = (project in file("."))
+  .dependsOn(common % "compile -> compile; test -> test")
 
 lazy val common = project
 
@@ -20,6 +21,9 @@ lazy val jerkson = project
   .dependsOn(common % "compile -> compile; test -> test")
 
 lazy val json4s = project
+  .dependsOn(common % "compile -> compile; test -> test")
+
+lazy val jsoniter = project
   .dependsOn(common % "compile -> compile; test -> test")
 
 lazy val lift = project
